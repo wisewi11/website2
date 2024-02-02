@@ -27,8 +27,8 @@ export default class SamirCube {
 
 
 
-    this.cube.rotation.x += 0.01;
-    this.cube.rotation.y += 0.01;
+    this.cube.lookAt(this.experience.camera.instance.position);
+    // this.cube.rotation.y += 0.01;
   }
   
 }
