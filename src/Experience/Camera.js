@@ -18,17 +18,17 @@ export default class Camera {
       0.1,
       100
     );
-    this.instance.position.set(0, 1.8, 0);
-    this.instance.lookAt(new THREE.Vector3(0, 1.8, 1));
+    this.instance.position.set(0, 1, 0);
+    this.instance.lookAt(new THREE.Vector3(0, 1, 1));
     this.scene.add(this.instance);
   }
   setOrbitControls() {
     this.controls = new OrbitControls(this.instance, this.canvas);
     this.controls.enableDamping = true;
     // this.controls.target = new THREE.Vector3(0, 1, 1);
-    this.instance.lookAt(new THREE.Vector3(0, 1.8, -1));
+    this.instance.lookAt(new THREE.Vector3(0, 1, -1));
 
-    this.controls.target = new THREE.Vector3(0, 1.8, 0);
+    this.controls.target = new THREE.Vector3(0, 1, 0);
   }
   resize() {
     this.instance.aspect = this.sizes.width / this.sizes.height;

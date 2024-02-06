@@ -19,7 +19,7 @@ export default class SamirCube {
     });
 
     this.cube = new THREE.Mesh(this.geometry, this.videoMaterial);
-    this.scene.add(this.cube);
+    
     this.cube.position.z = -4
     this.cube.position.y = 2
   }
