@@ -45,7 +45,7 @@ export default class World {
   }
   update() {
     for(let i = 0; i < this.planes.length; i++) {
-      //console.log(this.planes[i])
+      this.planes[i].update();
     }
   }
 }
